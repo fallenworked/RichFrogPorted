@@ -1,0 +1,38 @@
+{
+  "manifestVersion": 2,
+  "id": "com.meapia.richfrog",
+  "name": "RichFrog",
+  "version": "2.0.0",
+  "description": "Рейтинг, NFT-подарки, NFT-username и анонимный номер в твоём профиле (видно только тебе)",
+  "author": "@Meapia",
+  "homepage": "https://t.me/Meapia",
+  "license": "MIT",
+
+  "minWhitegram": "12.10.0",
+  "sdk": ">=6.0",
+  "testedSdk": "6.0",
+
+  "main": "main.js",
+  "entryPoints": { "main": "main.js" },
+
+  "languages": ["python"],
+  "runtimes": { "python": ">=3.11" },
+
+  "permissions": [
+    "messages.read",
+    "messages.send",
+    "ui.inject",
+    "ui.modifyTelegram",
+    "storage",
+    "settings",
+    "notifications"
+  ],
+
+  "extensionPoints": ["profile.header", "settings.page"],
+  "backgroundModes": [],
+
+  "settings": {
+    "title": "RichFrog",
+    "items": []
+  }
+}
